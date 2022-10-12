@@ -37,9 +37,9 @@ const links = document.querySelector(".links");
  const scrollLinks = document.querySelectorAll(".scroll-link");
 scrollLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
-    // prevent default
+    
     e.preventDefault();
-    // navigate to specific spot
+    // navegacion en un punto especifico
     const id = e.currentTarget.getAttribute("href").slice(1);
     const element = document.getElementById(id);
 
